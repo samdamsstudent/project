@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="afbeeldingen/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="author" content="Sam Dams"> 
+</head>
+
+<body>
+    <h1>SAM DAMS</h1>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bio.html">Bio</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="ervaring.html">Ervaring</a></li>
+        <li><a href="hobbys.html">Hobby's</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Afbeeldingen moeten uiteraard nog kleiner. Dat doe ik voor project 2 samen met de lay-out. -->
+    <!-- Validator zegt om hiervoor CSS te gebruiken. Ik ben me hiervan bewust maar laat dit staan om een idee te hebben waar ik naartoe wil. -->
+    <hr>
+    <table border="5" cellspacing="0" cellpadding="6">
+        <tr>
+            <td><img src="afbeeldingen/apenstaart_public_domain.jpg" alt ="apenstaart"></td>
+            <td>r0940635@student.thomasmore.be</td>
+        </tr>
+        <tr>
+            <td><img src="afbeeldingen/telefoon_creative_commons.png" alt ="telefoon"></td>
+            <td>0498/81.69.01</td>
+        </tr>
+    </table>
+
+     <hr>
+
+    <form action="contactformulier" method="GET">
+        <div>
+        <fieldset>
+            <legend>Gegevens:</legend>
+                <label for="voornaam">Voornaam:</label><br>
+                    <input type="text" id="voornaam" name="voornaam" value="John"><br>
+                <label for="achternaam">Achternaam:</label><br>
+                    <input type="text" id="achternaam" name="achternaam" value="Doe"><br><br>
+                <input type="submit" value="Submit">
+              </fieldset>
+        </div>
+      
+        <div>
+            <label for="email">Mail adres:
+              <input type="email" id="email" name="email" placeholder="mail@thomasmore.be" required>
+            </label>
+        </div>
+          
+        <div>
+            <label for="onderwerp">Onderwerp:
+              <input type="text" id="onderwerp" name="onderwerp">
+            </label>
+        </div>
+
+        <div>
+              <textarea id="vraag" name="vraag" rows="5" cols="50">
+              </textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Registreren">
+        </div>
+    </form>
+</body>
