@@ -1,0 +1,96 @@
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* Tekst uitlijnen */
+  text-align: justify;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+  padding: 30px;
+}
+
+.text {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.mb-3 {
+font-size: xx-large;
+font-weight: bold;
+}
+
+.row {
+  width: 33%;
+}
+
+.card-title {
+  text-align: center;
+}
+
+body {
+    margin: 0;
+  /* Container centreren */
+    margin: auto;
+    padding: 30px;
+    }
+
+  /* Wanneer je hovert over een list item anchor : <li><a> ... </a></li> */
+li a:hover {
+    position: relative;
+  }
+
+li a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 0, 0);
+}
+
+li a:hover:after {
+  transform: scaleX(1);
+}
+
+.afbeeldingbaby {
+    float: right;
+    overflow: auto;
+    padding: 20px;
+}
+
+.afbeeldingfamilie {
+  float: left;
+  overflow: auto;
+  padding: 30px;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: contain;
+  padding-top: 20px;
+}
+
+.footer {
+    color: black;
+    /*clear geeft weer welke zijden van een box naast een andere mogen liggen. In dit geval geen.*/
+    clear: both;
+    margin-left:auto;
+    margin-right: auto;
+    padding: 20px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:medium;
+    font-weight: bold;
+  }
+
+@media screen and (max-width: 800px) {
+    .header {
+      width: 100%;
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+  }
+
